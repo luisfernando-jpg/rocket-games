@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rocket league</title>
+    <link  rel="stylesheet" href="index.css">
+</head>
+<body> 
+         <img src="./img/logo.png" alt="" id="logo"> 
+        </head>
+        <body>
+            <main>
+                <section id="games-list">
+                    <h2>Lista de Jogos</h2>
+                    <ul id="games-ul">
+                        <!-- lista de jogos será renderizada aqui -->
+                    </ul>
+                    <button id="new-game-btn">Cadastrar Novo Jogo</button>
+                </section>
+                <section id="game-form">
+                    <h2>Cadastrar Jogo</h2>
+                    <form id="game-form">
+                        <label for="game-name">Nome do Jogo:</label>
+                        <input type="text" id="game-name" name="game-name"><br><br>
+                        <label for="game-description">Descrição do Jogo:</label>
+                        <textarea id="game-description" name="game-description"></textarea><br><br>
+                        <button id="create-game-btn">Cadastrar</button>
+                    </form>
+                </section>
+                <section id="update-game-form" style="display: none;">
+                    <h2>Atualizar Jogo</h2>
+                    <form id="update-game-form">
+                        <label for="update-game-name">Nome do Jogo:</label>
+                        <input type="text" id="update-game-name" name="update-game-name"><br><br>
+                        <label for="update-game-description">Descrição do Jogo:</label>
+                        <textarea id="update-game-description" name="update-game-description"></textarea><br><br>
+                        <button id="update-game-btn">Atualizar</button>
+                    </form>
+                </section>
+            </main>
+            <script src="script.js" type="text/javascript"></script> 
+        </body>
+        </html>
